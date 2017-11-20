@@ -1,0 +1,86 @@
+#header{
+  text-align: center;
+  font-size: 32px;
+}
+/*===========Querries=============*/
+
+
+
+.table-container{
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-auto-rows: auto;
+  margin: 0 15%;
+  border: 1px solid black;
+  grid-gap: .1em;
+  padding: 1px;
+  background-color: #CCC;
+}
+.table-container > *{
+  display: grid;
+  border: 1px double black;
+  text-align: center;
+}
+
+.table-container > div:nth-of-type(-n + 3){
+  font-weight: 800;
+}
+
+.head-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  background-color: #ADD8E6;
+  height: 40px;
+  margin: 20px 0 40px 0;
+}
+
+.head-container > *{
+  border: 1px solid blue;
+  text-align: center;
+}
+.list-contain{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+}
+
+.list-contain h3{
+  text-align: center;
+}
+
+.contain-pics{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 40px 10%;
+  height: 200px;
+}
+
+#circle{
+  background-color: green;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+#square{
+  background-color: purple;
+  width: 200px;
+  border: 2px solid black;
+}
+
+#pic{
+  background: url(https://www.petakids.com/wp-content/uploads/2015/11/Baby-Bunny.jpg)center center;
+  background-size: cover;
+  border: 2px solid blue;
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 650px){
+  .contain-pics{
+      flex-wrap: wrap;
+  }
+}
